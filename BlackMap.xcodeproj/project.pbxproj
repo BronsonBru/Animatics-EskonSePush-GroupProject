@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15C4C137FB77C56AEC3186FF /* Pods_BlackMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E94823E68556E1B7598DB6C /* Pods_BlackMap.framework */; };
+		7280A44708AA6FC990E549D1 /* Pods_BlackMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB6A6BCA75902D1613B659B /* Pods_BlackMapTests.framework */; };
+		C9CB56F25B53A7157DB08606 /* Pods_BlackMap_BlackMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 227353B1C1BC9CB37583B7D8 /* Pods_BlackMap_BlackMapUITests.framework */; };
+		CF731FB028F97233006E7F77 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF731FAF28F97233006E7F77 /* ModalView.swift */; };
+		CF731FB228F9A327006E7F77 /* StagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF731FB128F9A327006E7F77 /* StagesView.swift */; };
+		CF731FB428F9A927006E7F77 /* TimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF731FB328F9A927006E7F77 /* TimesView.swift */; };
+		CF731FB628F9ACE0006E7F77 /* PullUpModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF731FB528F9ACE0006E7F77 /* PullUpModal.swift */; };
+		CF731FB828FB2A9C006E7F77 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF731FB728FB2A9C006E7F77 /* SliderView.swift */; };
+		F63969ED28F7E776003F5757 /* BlackMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63969EC28F7E776003F5757 /* BlackMapApp.swift */; };
+		F63969EF28F7E776003F5757 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63969EE28F7E776003F5757 /* ContentView.swift */; };
+		F63969F128F7E777003F5757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63969F028F7E777003F5757 /* Assets.xcassets */; };
+		F63969F428F7E778003F5757 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F63969F328F7E778003F5757 /* Preview Assets.xcassets */; };
+		F63969FE28F7E778003F5757 /* BlackMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63969FD28F7E778003F5757 /* BlackMapTests.swift */; };
+		F6396A0828F7E778003F5757 /* BlackMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6396A0728F7E778003F5757 /* BlackMapUITests.swift */; };
+		F6396A0A28F7E778003F5757 /* BlackMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6396A0928F7E778003F5757 /* BlackMapUITestsLaunchTests.swift */; };
+		F69216E128F94367000F0E78 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69216E028F94367000F0E78 /* MapView.swift */; };
+		F69216E328F943B6000F0E78 /* LandMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69216E228F943B6000F0E78 /* LandMark.swift */; };
+		F69216E528F943FE000F0E78 /* MapLocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69216E428F943FE000F0E78 /* MapLocationDelegate.swift */; };
+		F69216E728F94443000F0E78 /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69216E628F94443000F0E78 /* MapPin.swift */; };
+		F69216F328F9A7AB000F0E78 /* GeoJSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69216F228F9A7AB000F0E78 /* GeoJSONHelper.swift */; };
+		F69216F428F9BA48000F0E78 /* SampleGeoJSON.geojson in Resources */ = {isa = PBXBuildFile; fileRef = F69216F128F9A764000F0E78 /* SampleGeoJSON.geojson */; };
+		F69216F728FAAB3A000F0E78 /* gadm41_ZAF_4.json in Resources */ = {isa = PBXBuildFile; fileRef = F69216F628FAAB3A000F0E78 /* gadm41_ZAF_4.json */; };
+		F6CA9DCA28F82CE1003ECD03 /* AccessTokenProviderImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CA9DC928F82CE1003ECD03 /* AccessTokenProviderImplementation.swift */; };
+		F6CA9DCD28F84113003ECD03 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CA9DCC28F84113003ECD03 /* StatusViewModel.swift */; };
+		F6CA9DD028F84AA9003ECD03 /* MapContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CA9DCF28F84AA9003ECD03 /* MapContainerView.swift */; };
+		F6D8B35128FAC40200825434 /* Polygon+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D8B35028FAC40200825434 /* Polygon+extension.swift */; };
+		F6D8B35328FB10D200825434 /* EasternCape.geojson in Resources */ = {isa = PBXBuildFile; fileRef = F6D8B35228FB10D200825434 /* EasternCape.geojson */; };
+		F6D8B35528FB154500825434 /* FreeState.geojson in Resources */ = {isa = PBXBuildFile; fileRef = F6D8B35428FB154500825434 /* FreeState.geojson */; };
+		F6D8B35728FB16D800825434 /* Gauteng.geojson in Resources */ = {isa = PBXBuildFile; fileRef = F6D8B35628FB16D800825434 /* Gauteng.geojson */; };
+		F6D8B35F28FB18F600825434 /* Limpopo.geojson in Resources */ = {isa = PBXBuildFile; fileRef = F6D8B35828FB18F600825434 /* Limpopo.geojson */; };
+		F6D8B36028FB18F600825434 /* NorthernCape.geojson in Resources */ = {isa = PBXBuildFile; fileRef = F6D8B35928FB18F600825434 /* NorthernCape.geojson */; };
+		F6D8B36128FB18F600825434 /* WesternCape.geojson in Resources */ = {isa = PBXBuildFile; fileRef = F6D8B35A28FB18F600825434 /* WesternCape.geojson */; };
+		F6D8B36228FB18F600825434 /* Mpumalanga.geojson in Resources */ = {isa = PBXBuildFile; fileRef = F6D8B35B28FB18F600825434 /* Mpumalanga.geojson */; };
+		F6D8B36328FB18F600825434 /* KwaZuluNatal.geojson in Resources */ = {isa = PBXBuildFile; fileRef = F6D8B35C28FB18F600825434 /* KwaZuluNatal.geojson */; };
+		F6D8B36528FB18F600825434 /* NorthWest.geojson in Resources */ = {isa = PBXBuildFile; fileRef = F6D8B35E28FB18F600825434 /* NorthWest.geojson */; };
+		F6D8B36728FC30B900825434 /* WardMapping.json in Resources */ = {isa = PBXBuildFile; fileRef = F6D8B36628FC30B900825434 /* WardMapping.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F63969FA28F7E778003F5757 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63969E128F7E776003F5757 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F63969E828F7E776003F5757;
+			remoteInfo = BlackMap;
+		};
+		F6396A0428F7E778003F5757 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F63969E128F7E776003F5757 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F63969E828F7E776003F5757;
+			remoteInfo = BlackMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DB6A6BCA75902D1613B659B /* Pods_BlackMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E94823E68556E1B7598DB6C /* Pods_BlackMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		227353B1C1BC9CB37583B7D8 /* Pods_BlackMap_BlackMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackMap_BlackMapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FA06EF99A81C82ABB45659E /* Pods-BlackMap-BlackMapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMap-BlackMapUITests.release.xcconfig"; path = "Target Support Files/Pods-BlackMap-BlackMapUITests/Pods-BlackMap-BlackMapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4027D423A927C145708F79D0 /* Pods-BlackMap-BlackMapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMap-BlackMapUITests.debug.xcconfig"; path = "Target Support Files/Pods-BlackMap-BlackMapUITests/Pods-BlackMap-BlackMapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5951D2D7503F9D3581DC186D /* Pods-BlackMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMapTests.debug.xcconfig"; path = "Target Support Files/Pods-BlackMapTests/Pods-BlackMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF731FAF28F97233006E7F77 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		CF731FB128F9A327006E7F77 /* StagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagesView.swift; sourceTree = "<group>"; };
+		CF731FB328F9A927006E7F77 /* TimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesView.swift; sourceTree = "<group>"; };
+		CF731FB528F9ACE0006E7F77 /* PullUpModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullUpModal.swift; sourceTree = "<group>"; };
+		CF731FB728FB2A9C006E7F77 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		D02571AEC7D551297C424324 /* Pods-BlackMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMapTests.release.xcconfig"; path = "Target Support Files/Pods-BlackMapTests/Pods-BlackMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF230EF0B2498EACC569060E /* Pods-BlackMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMap.debug.xcconfig"; path = "Target Support Files/Pods-BlackMap/Pods-BlackMap.debug.xcconfig"; sourceTree = "<group>"; };
+		EF5F80DCA96C4F7EB4B6602B /* Pods-BlackMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackMap.release.xcconfig"; path = "Target Support Files/Pods-BlackMap/Pods-BlackMap.release.xcconfig"; sourceTree = "<group>"; };
+		F63969E928F7E776003F5757 /* BlackMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63969EC28F7E776003F5757 /* BlackMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackMapApp.swift; sourceTree = "<group>"; };
+		F63969EE28F7E776003F5757 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F63969F028F7E777003F5757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F63969F328F7E778003F5757 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F63969F928F7E778003F5757 /* BlackMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63969FD28F7E778003F5757 /* BlackMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackMapTests.swift; sourceTree = "<group>"; };
+		F6396A0328F7E778003F5757 /* BlackMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6396A0728F7E778003F5757 /* BlackMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackMapUITests.swift; sourceTree = "<group>"; };
+		F6396A0928F7E778003F5757 /* BlackMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F69216E028F94367000F0E78 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F69216E228F943B6000F0E78 /* LandMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMark.swift; sourceTree = "<group>"; };
+		F69216E428F943FE000F0E78 /* MapLocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationDelegate.swift; sourceTree = "<group>"; };
+		F69216E628F94443000F0E78 /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		F69216F128F9A764000F0E78 /* SampleGeoJSON.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = SampleGeoJSON.geojson; sourceTree = "<group>"; };
+		F69216F228F9A7AB000F0E78 /* GeoJSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSONHelper.swift; sourceTree = "<group>"; };
+		F69216F628FAAB3A000F0E78 /* gadm41_ZAF_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gadm41_ZAF_4.json; sourceTree = "<group>"; };
+		F6CA9DC928F82CE1003ECD03 /* AccessTokenProviderImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenProviderImplementation.swift; sourceTree = "<group>"; };
+		F6CA9DCC28F84113003ECD03 /* StatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
+		F6CA9DCF28F84AA9003ECD03 /* MapContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainerView.swift; sourceTree = "<group>"; };
+		F6D8B35028FAC40200825434 /* Polygon+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Polygon+extension.swift"; sourceTree = "<group>"; };
+		F6D8B35228FB10D200825434 /* EasternCape.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EasternCape.geojson; sourceTree = "<group>"; };
+		F6D8B35428FB154500825434 /* FreeState.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FreeState.geojson; sourceTree = "<group>"; };
+		F6D8B35628FB16D800825434 /* Gauteng.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gauteng.geojson; sourceTree = "<group>"; };
+		F6D8B35828FB18F600825434 /* Limpopo.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Limpopo.geojson; sourceTree = "<group>"; };
+		F6D8B35928FB18F600825434 /* NorthernCape.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NorthernCape.geojson; sourceTree = "<group>"; };
+		F6D8B35A28FB18F600825434 /* WesternCape.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WesternCape.geojson; sourceTree = "<group>"; };
+		F6D8B35B28FB18F600825434 /* Mpumalanga.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mpumalanga.geojson; sourceTree = "<group>"; };
+		F6D8B35C28FB18F600825434 /* KwaZuluNatal.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KwaZuluNatal.geojson; sourceTree = "<group>"; };
+		F6D8B35E28FB18F600825434 /* NorthWest.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NorthWest.geojson; sourceTree = "<group>"; };
+		F6D8B36628FC30B900825434 /* WardMapping.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WardMapping.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F63969E628F7E776003F5757 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C4C137FB77C56AEC3186FF /* Pods_BlackMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63969F628F7E778003F5757 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7280A44708AA6FC990E549D1 /* Pods_BlackMapTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6396A0028F7E778003F5757 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CB56F25B53A7157DB08606 /* Pods_BlackMap_BlackMapUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1599C99A898984DC19399869 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF230EF0B2498EACC569060E /* Pods-BlackMap.debug.xcconfig */,
+				EF5F80DCA96C4F7EB4B6602B /* Pods-BlackMap.release.xcconfig */,
+				4027D423A927C145708F79D0 /* Pods-BlackMap-BlackMapUITests.debug.xcconfig */,
+				3FA06EF99A81C82ABB45659E /* Pods-BlackMap-BlackMapUITests.release.xcconfig */,
+				5951D2D7503F9D3581DC186D /* Pods-BlackMapTests.debug.xcconfig */,
+				D02571AEC7D551297C424324 /* Pods-BlackMapTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B64C89C80443E40D62F6CAF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E94823E68556E1B7598DB6C /* Pods_BlackMap.framework */,
+				227353B1C1BC9CB37583B7D8 /* Pods_BlackMap_BlackMapUITests.framework */,
+				0DB6A6BCA75902D1613B659B /* Pods_BlackMapTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F63969E028F7E776003F5757 = {
+			isa = PBXGroup;
+			children = (
+				F63969EB28F7E776003F5757 /* BlackMap */,
+				F63969FC28F7E778003F5757 /* BlackMapTests */,
+				F6396A0628F7E778003F5757 /* BlackMapUITests */,
+				F63969EA28F7E776003F5757 /* Products */,
+				1599C99A898984DC19399869 /* Pods */,
+				B64C89C80443E40D62F6CAF0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F63969EA28F7E776003F5757 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F63969E928F7E776003F5757 /* BlackMap.app */,
+				F63969F928F7E778003F5757 /* BlackMapTests.xctest */,
+				F6396A0328F7E778003F5757 /* BlackMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F63969EB28F7E776003F5757 /* BlackMap */ = {
+			isa = PBXGroup;
+			children = (
+				F69216F528FAAB12000F0E78 /* Data */,
+				F6CA9DCE28F84A99003ECD03 /* Views */,
+				F6CA9DCB28F840FD003ECD03 /* ViewModel */,
+				F6CA9DC828F82CC9003ECD03 /* Providers */,
+				F63969EC28F7E776003F5757 /* BlackMapApp.swift */,
+				F63969EE28F7E776003F5757 /* ContentView.swift */,
+				F63969F028F7E777003F5757 /* Assets.xcassets */,
+				F63969F228F7E778003F5757 /* Preview Content */,
+			);
+			path = BlackMap;
+			sourceTree = "<group>";
+		};
+		F63969F228F7E778003F5757 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F63969F328F7E778003F5757 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F63969FC28F7E778003F5757 /* BlackMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				F63969FD28F7E778003F5757 /* BlackMapTests.swift */,
+			);
+			path = BlackMapTests;
+			sourceTree = "<group>";
+		};
+		F6396A0628F7E778003F5757 /* BlackMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F6396A0728F7E778003F5757 /* BlackMapUITests.swift */,
+				F6396A0928F7E778003F5757 /* BlackMapUITestsLaunchTests.swift */,
+			);
+			path = BlackMapUITests;
+			sourceTree = "<group>";
+		};
+		F69216F528FAAB12000F0E78 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F6D8B36628FC30B900825434 /* WardMapping.json */,
+				F6D8B35628FB16D800825434 /* Gauteng.geojson */,
+				F6D8B35C28FB18F600825434 /* KwaZuluNatal.geojson */,
+				F6D8B35828FB18F600825434 /* Limpopo.geojson */,
+				F6D8B35B28FB18F600825434 /* Mpumalanga.geojson */,
+				F6D8B35928FB18F600825434 /* NorthernCape.geojson */,
+				F6D8B35E28FB18F600825434 /* NorthWest.geojson */,
+				F6D8B35A28FB18F600825434 /* WesternCape.geojson */,
+				F6D8B35428FB154500825434 /* FreeState.geojson */,
+				F6D8B35228FB10D200825434 /* EasternCape.geojson */,
+				F69216F628FAAB3A000F0E78 /* gadm41_ZAF_4.json */,
+				F69216F128F9A764000F0E78 /* SampleGeoJSON.geojson */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F6CA9DC828F82CC9003ECD03 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				F6CA9DC928F82CE1003ECD03 /* AccessTokenProviderImplementation.swift */,
+				F69216E428F943FE000F0E78 /* MapLocationDelegate.swift */,
+				F69216F228F9A7AB000F0E78 /* GeoJSONHelper.swift */,
+				F6D8B35028FAC40200825434 /* Polygon+extension.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		F6CA9DCB28F840FD003ECD03 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6CA9DCC28F84113003ECD03 /* StatusViewModel.swift */,
+				F69216E228F943B6000F0E78 /* LandMark.swift */,
+				F69216E628F94443000F0E78 /* MapPin.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F6CA9DCE28F84A99003ECD03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6CA9DCF28F84AA9003ECD03 /* MapContainerView.swift */,
+				F69216E028F94367000F0E78 /* MapView.swift */,
+				CF731FAF28F97233006E7F77 /* ModalView.swift */,
+				CF731FB128F9A327006E7F77 /* StagesView.swift */,
+				CF731FB328F9A927006E7F77 /* TimesView.swift */,
+				CF731FB728FB2A9C006E7F77 /* SliderView.swift */,
+				CF731FB528F9ACE0006E7F77 /* PullUpModal.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F63969E828F7E776003F5757 /* BlackMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6396A0D28F7E778003F5757 /* Build configuration list for PBXNativeTarget "BlackMap" */;
+			buildPhases = (
+				F94DDAC560FEAE54959F6C4C /* [CP] Check Pods Manifest.lock */,
+				F63969E528F7E776003F5757 /* Sources */,
+				F63969E628F7E776003F5757 /* Frameworks */,
+				F63969E728F7E776003F5757 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlackMap;
+			productName = BlackMap;
+			productReference = F63969E928F7E776003F5757 /* BlackMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F63969F828F7E778003F5757 /* BlackMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6396A1028F7E778003F5757 /* Build configuration list for PBXNativeTarget "BlackMapTests" */;
+			buildPhases = (
+				EB7F737B34507B3D5AFC8893 /* [CP] Check Pods Manifest.lock */,
+				F63969F528F7E778003F5757 /* Sources */,
+				F63969F628F7E778003F5757 /* Frameworks */,
+				F63969F728F7E778003F5757 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F63969FB28F7E778003F5757 /* PBXTargetDependency */,
+			);
+			name = BlackMapTests;
+			productName = BlackMapTests;
+			productReference = F63969F928F7E778003F5757 /* BlackMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6396A0228F7E778003F5757 /* BlackMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6396A1328F7E778003F5757 /* Build configuration list for PBXNativeTarget "BlackMapUITests" */;
+			buildPhases = (
+				85DA5EE0D743B29C83FB9752 /* [CP] Check Pods Manifest.lock */,
+				F63969FF28F7E778003F5757 /* Sources */,
+				F6396A0028F7E778003F5757 /* Frameworks */,
+				F6396A0128F7E778003F5757 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6396A0528F7E778003F5757 /* PBXTargetDependency */,
+			);
+			name = BlackMapUITests;
+			productName = BlackMapUITests;
+			productReference = F6396A0328F7E778003F5757 /* BlackMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F63969E128F7E776003F5757 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F63969E828F7E776003F5757 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					F63969F828F7E778003F5757 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = F63969E828F7E776003F5757;
+					};
+					F6396A0228F7E778003F5757 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = F63969E828F7E776003F5757;
+					};
+				};
+			};
+			buildConfigurationList = F63969E428F7E776003F5757 /* Build configuration list for PBXProject "BlackMap" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F63969E028F7E776003F5757;
+			productRefGroup = F63969EA28F7E776003F5757 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F63969E828F7E776003F5757 /* BlackMap */,
+				F63969F828F7E778003F5757 /* BlackMapTests */,
+				F6396A0228F7E778003F5757 /* BlackMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F63969E728F7E776003F5757 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D8B35328FB10D200825434 /* EasternCape.geojson in Resources */,
+				F6D8B35528FB154500825434 /* FreeState.geojson in Resources */,
+				F6D8B36328FB18F600825434 /* KwaZuluNatal.geojson in Resources */,
+				F6D8B35F28FB18F600825434 /* Limpopo.geojson in Resources */,
+				F6D8B36728FC30B900825434 /* WardMapping.json in Resources */,
+				F6D8B36028FB18F600825434 /* NorthernCape.geojson in Resources */,
+				F63969F428F7E778003F5757 /* Preview Assets.xcassets in Resources */,
+				F6D8B36528FB18F600825434 /* NorthWest.geojson in Resources */,
+				F6D8B36128FB18F600825434 /* WesternCape.geojson in Resources */,
+				F6D8B36228FB18F600825434 /* Mpumalanga.geojson in Resources */,
+				F69216F428F9BA48000F0E78 /* SampleGeoJSON.geojson in Resources */,
+				F69216F728FAAB3A000F0E78 /* gadm41_ZAF_4.json in Resources */,
+				F63969F128F7E777003F5757 /* Assets.xcassets in Resources */,
+				F6D8B35728FB16D800825434 /* Gauteng.geojson in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63969F728F7E778003F5757 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6396A0128F7E778003F5757 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85DA5EE0D743B29C83FB9752 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlackMap-BlackMapUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB7F737B34507B3D5AFC8893 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlackMapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F94DDAC560FEAE54959F6C4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlackMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F63969E528F7E776003F5757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6CA9DCD28F84113003ECD03 /* StatusViewModel.swift in Sources */,
+				F69216E128F94367000F0E78 /* MapView.swift in Sources */,
+				F63969EF28F7E776003F5757 /* ContentView.swift in Sources */,
+				F69216E728F94443000F0E78 /* MapPin.swift in Sources */,
+				CF731FB028F97233006E7F77 /* ModalView.swift in Sources */,
+				F69216F328F9A7AB000F0E78 /* GeoJSONHelper.swift in Sources */,
+				CF731FB228F9A327006E7F77 /* StagesView.swift in Sources */,
+				F63969ED28F7E776003F5757 /* BlackMapApp.swift in Sources */,
+				F6D8B35128FAC40200825434 /* Polygon+extension.swift in Sources */,
+				CF731FB828FB2A9C006E7F77 /* SliderView.swift in Sources */,
+				F6CA9DCA28F82CE1003ECD03 /* AccessTokenProviderImplementation.swift in Sources */,
+				CF731FB628F9ACE0006E7F77 /* PullUpModal.swift in Sources */,
+				F6CA9DD028F84AA9003ECD03 /* MapContainerView.swift in Sources */,
+				F69216E528F943FE000F0E78 /* MapLocationDelegate.swift in Sources */,
+				F69216E328F943B6000F0E78 /* LandMark.swift in Sources */,
+				CF731FB428F9A927006E7F77 /* TimesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63969F528F7E778003F5757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63969FE28F7E778003F5757 /* BlackMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63969FF28F7E778003F5757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6396A0A28F7E778003F5757 /* BlackMapUITestsLaunchTests.swift in Sources */,
+				F6396A0828F7E778003F5757 /* BlackMapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F63969FB28F7E778003F5757 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F63969E828F7E776003F5757 /* BlackMap */;
+			targetProxy = F63969FA28F7E778003F5757 /* PBXContainerItemProxy */;
+		};
+		F6396A0528F7E778003F5757 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F63969E828F7E776003F5757 /* BlackMap */;
+			targetProxy = F6396A0428F7E778003F5757 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F6396A0B28F7E778003F5757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6396A0C28F7E778003F5757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6396A0E28F7E778003F5757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF230EF0B2498EACC569060E /* Pods-BlackMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BlackMap/Preview Content\"";
+				DEVELOPMENT_TEAM = 69XM53S226;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationUsageDescription = "Displaying the user location on a map";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need this dude";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glucode.EbenPlaygrounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6396A0F28F7E778003F5757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF5F80DCA96C4F7EB4B6602B /* Pods-BlackMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BlackMap/Preview Content\"";
+				DEVELOPMENT_TEAM = 69XM53S226;
+				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationUsageDescription = "Displaying the user location on a map";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need this dude";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glucode.EbenPlaygrounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F6396A1128F7E778003F5757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5951D2D7503F9D3581DC186D /* Pods-BlackMapTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glucode.BlackMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlackMap";
+			};
+			name = Debug;
+		};
+		F6396A1228F7E778003F5757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D02571AEC7D551297C424324 /* Pods-BlackMapTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glucode.BlackMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlackMap";
+			};
+			name = Release;
+		};
+		F6396A1428F7E778003F5757 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4027D423A927C145708F79D0 /* Pods-BlackMap-BlackMapUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glucode.BlackMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlackMap;
+			};
+			name = Debug;
+		};
+		F6396A1528F7E778003F5757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FA06EF99A81C82ABB45659E /* Pods-BlackMap-BlackMapUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glucode.BlackMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlackMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F63969E428F7E776003F5757 /* Build configuration list for PBXProject "BlackMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6396A0B28F7E778003F5757 /* Debug */,
+				F6396A0C28F7E778003F5757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6396A0D28F7E778003F5757 /* Build configuration list for PBXNativeTarget "BlackMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6396A0E28F7E778003F5757 /* Debug */,
+				F6396A0F28F7E778003F5757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6396A1028F7E778003F5757 /* Build configuration list for PBXNativeTarget "BlackMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6396A1128F7E778003F5757 /* Debug */,
+				F6396A1228F7E778003F5757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6396A1328F7E778003F5757 /* Build configuration list for PBXNativeTarget "BlackMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6396A1428F7E778003F5757 /* Debug */,
+				F6396A1528F7E778003F5757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F63969E128F7E776003F5757 /* Project object */;
+}
